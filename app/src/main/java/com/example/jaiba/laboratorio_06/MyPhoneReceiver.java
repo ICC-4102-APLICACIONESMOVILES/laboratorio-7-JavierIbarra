@@ -12,8 +12,8 @@ public class MyPhoneReceiver extends BroadcastReceiver{
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)){
             Toast.makeText(context,"Iniciado",Toast.LENGTH_LONG).show();
 
-            Intent intent1 = new Intent(context,MainActivity.class);
-            context.startActivity(intent1);
+            //Intent intent1 = new Intent(context,MainActivity.class);
+            //context.startActivity(intent1);
         }
     }
 }
