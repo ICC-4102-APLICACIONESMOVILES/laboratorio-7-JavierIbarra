@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class MyPhoneReceiver extends BroadcastReceiver{
+
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)){
-            Toast.makeText(context,"Iniciado",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Iniciado",Toast.LENGTH_LONG).show();
 
+            Intent intent1 = new Intent(context,MainActivity.class);
+            context.startActivity(intent1);
         }
     }
 }
